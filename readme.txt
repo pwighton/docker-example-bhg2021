@@ -1,12 +1,11 @@
 Build the base container:
-
 ```
 docker run pwighton/neurodocker generate docker \
   --yes \
   --base-image python:3.8-buster \
   --pkg-manager apt \
   --fsl \
-    version=6.0.4 \
+    version=5.0.10 \
     method=binaries \
   --freesurfer \
     version=7.1.1 \
@@ -14,7 +13,6 @@ docker run pwighton/neurodocker generate docker \
 ```
 
 Build the derived container:
-
 ```
 docker buiuld -t 22011974/norway-docker
 ```
